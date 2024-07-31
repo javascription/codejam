@@ -45,7 +45,8 @@ body {
 
 header {
   position: relative;
-  padding: 2rem; 
+  padding: 2rem;
+  z-index: 1000;
 }
 
 .navbar { 
@@ -156,14 +157,15 @@ a {
 /* Footer */
 
 .footer {
-    background-color: #e7e9e3;
+    background: transparent;
     padding: 2% 3%;
     display: flex;
     justify-content: space-between;
     width: 97%;
     z-index: 100;
-    top: 50rem;
-    position: relative;
+    position: fixed;
+    bottom: 0;
+    color:#e7e9e3
 }
   
 .f-title {
@@ -173,7 +175,6 @@ a {
 }
   
 .f-links a {
-    color: grey;
     padding-inline: 10px;
 } 
 
@@ -274,7 +275,77 @@ a {
   width: 80px;
 }
 
+/* Contact */
 
+.form {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 60rem;
+}
 
+form {
+  position: absolute;
+  top: 12rem;
+  height: 700px;
+  width: 800px;
+  backdrop-filter: blur(10px);
+  flex-direction: column;
+  border: 2px solid white;
+  border-radius: 80px;
+  display: flex;
+  align-items: center;
+  bottom: 5rem;
+}
 
+form .reach {
+  font-size: 4rem;
+  color: white;
+  font-weight: 800;
+  margin-bottom: 5rem;
+  margin-top: 4rem;
+}
 
+form span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Cname,
+.Cemail,
+.Cmsg {
+  width: 500px;
+  height: 60px;
+  font-size: 1.3rem;
+  padding: 0 20px;
+}
+
+.def {
+  width: 500px;
+  text-align: start;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.Csubmit {
+  width: 100px;
+  height: 60px;
+  font-size: 1.6rem;
+  color: white;
+  border: 2px solid #7028f5;
+  border-radius: 10px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#canvas {
+  position: absolute;
+  z-index: 40;
+  pointer-events: none;
+  height: 100vh;
+  width: 100vw;
+}
