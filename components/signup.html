@@ -56,14 +56,16 @@
             <div class=" bg-black">
                 <div class="card bg-black">
                     <form onsubmit="event.preventDefault()" class="box p-4 pt-5 pb-5">
-                        <h1>Login</h1>
-                        <p class="text-muted" id="errors"> Please enter your username and password!</p> 
-                        <input type="text" name=""placeholder="Username" >
-                        <input type="password" name="" placeholder="Password">
-                        <input type="submit" name=""value="Login" href="#">
+                        <h1>Signup</h1>
+                        <p class="text-muted" > Please enter the username and password</p> 
+                        <p class="font-weight-bold text-danger" id="errors"> </p> 
+                        <input type="text" name=""placeholder="Username" id="username">
+                        <input type="text" name=""placeholder="Email" id="email">
+                        <input type="password" name="" placeholder="Password" id="password">
+                        <input type="submit" name=""value="Login" href="#" id="submit">
                       <a href="signup.html">
                         <p>
-                            New? Sign up Instead
+                            Already signed up? Login Instead
                         </p>
                       </a>
                     </form>
@@ -102,7 +104,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="login.js"></script>
+    <script src="signup.js"></script>
 </body>
 
 </html>
