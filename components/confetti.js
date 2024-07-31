@@ -5,6 +5,8 @@ const context = canvas.getContext("2d");
 const maxConfettis = 120;
 const particles = [];
 
+stop = false
+
 const possibleColors = [
     "DodgerBlue",
     "OliveDrab",
@@ -49,13 +51,17 @@ function confettiParticle() {
 function Draw() {
     canvas.style.display="block"
     const results = [];
+   
 
-    requestAnimationFrame(Draw);
+    animationId = requestAnimationFrame(Draw);
 
     context.clearRect(0, 0, W, window.innerHeight);
 
     for (var i = 0; i < maxConfettis; i++) {
-        results.push(particles[i].draw());
+        if (!stop){
+            results.push(particles[i].draw());
+        } 
+       
     }
 
     let particle = {};
@@ -100,5 +106,14 @@ canvas.height = H;
 const form = document.getElementById("myForm");
 form.addEventListener("submit", function(event) {
     event.preventDefault();
+    stop=false
     Draw();
+   
+
+    setTimeout(() => {
+        stop = true
+        
+    }, 3000);
+
+    
 });
