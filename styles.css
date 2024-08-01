@@ -195,6 +195,10 @@ a:hover {
   }
 }
 
+.serviceMain {
+  font-family: 'EB Garamond';
+}
+
 .bg-elements{
   background-color:#413B35 !important;
 }
@@ -213,15 +217,15 @@ a:hover {
 
 .service_title{
   font-size: 2.5em;
- 
+  color: aliceblue;
+  font-family: 'EB Garamond';
+}
 
-    
-    color:aliceblue   
- 
+.Services_title {
+  font-family: 'Raleway';
 }
 
 .view_more{
- 
   font-size: 1.4em;
   top: 90%;
   left: 32%;
