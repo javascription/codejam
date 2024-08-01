@@ -312,14 +312,10 @@ form span {
   width: 100vw;
 }
 
-
-.hContainer { 
+#hContainer { 
   top: 0;
   width: 100vw;
-  height: 80rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 100rem;
   position: absolute;
   background: repeating-linear-gradient(
     0deg,
@@ -336,13 +332,14 @@ form span {
     rgba(0, 0, 0, 0.3) 20px /* Increase spacing between lines */
   );
   background-color: #1e1e1e; /* Dark background color */
+  font-family: 'Raleway';
+  color: var(--primary-color);
 }
 
-.hTitle {
-  margin-top: 13rem;
-  color: var(--primary-color);
-  font-size: 4rem;
-  font-family: 'Raleway';
+.hCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Cool Effect */
@@ -375,7 +372,85 @@ form span {
 }
 
 .hTitle-p {
-  color: var(--primary-color);
   font-size: 3rem;
-  font-family: 'Raleway';
+}
+
+.hTitle {
+  margin-top: 13rem;
+  font-size: 4rem;
+}
+
+@media (max-width: 1110px) {
+  .hTitle {
+    font-size: 3.4rem;
+  }
+  .hTitle-p {
+    font-size: 2.4rem;
+  }
+}
+
+#abt,
+.hTest {
+  font-size: 3.7rem;
+  position: relative;
+  top: 14rem;
+  left: 3rem;
+  font-family: 'EB Garamond';
+  width: 30%;
+}
+
+.hPara {
+  position: relative;
+  width: 100vw;
+  font-family: 'EB Garamond';
+  top: 16rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;;
+}
+
+#hContainer p {
+  width: 90%;
+}
+
+.hServices-b,
+.hContact-b {
+  padding: 7px 20px;
+  font-size: 1.3rem;
+  margin-right: 30px;
+  border: 2px solid greenyellow;
+  border-radius: 15px;
+}
+
+.hServices-b:hover,
+.hContact-b:hover {
+  padding: 9px 22px;
+  font-size: 1.4rem;
+  margin-right: 30px;
+  border: 2px solid greenyellow;
+  border-radius: 20px;
+}
+
+.hTest {
+  top: 18rem;
+}
+
+.carousel {
+  top: 19rem;
+  position: relative;
+}
+
+.card {
+  border: 2px solid var(--primary-color);
+  background: transparent;
+  backdrop-filter: blur(10px);
+}
+
+.user-content p{
+  margin-top:5px;
+  font-size:12px;
+}
+
+.ratings i{
+  color: goldenrod;
 }
