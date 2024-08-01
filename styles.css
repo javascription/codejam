@@ -443,3 +443,15 @@ form span {
 .ratings i{
   color: goldenrod;
 }
+
+.product-info{
+  padding: 5%;
+  overflow: auto;
+
+}
+
+.car-text{
+  
+  font-size:(0.6rem+0.2vw); 
+  color: var(--primary-color);
+}
