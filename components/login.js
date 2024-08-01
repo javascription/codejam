@@ -1,14 +1,14 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     
-    console.log("loaded")
+    console.log('joj')
     data = localStorage.getItem("userData");
     form = document.getElementById("form");
     var user;
     data_json = data ? JSON.parse(data) : [];
     for (let i = 0; i < data_json.length; i++) {
         if(data_json[i].status === "logged in"){
-            form.innerHTML = `<h1>Already logged in</h1> <p class="log-out text-muted" style="cursor:pointer"> logout?</p>`   
+            form.innerHTML = `<h1>Already logged in</h1> <p class="log-out text-muted" style="cursor:pointer""> logout?</p>`   
             user = i
             
         }
@@ -17,11 +17,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     logout = document.querySelector(".log-out");
-    logout.addEventListener("click", function() {
-        data_json[user].status = "logged out";
-        localStorage.setItem("userData", JSON.stringify(data_json));
-        location.reload()
-    })
+    if (logout) {
+        logout.addEventListener("click", function() {
+            console.log('nice');
+            data_json[user].status = "logged out";
+            localStorage.setItem("userData", JSON.stringify(data_json));
+            location.reload();
+        }
+    )
+        console.log("added")
+    ;
+    }else{
+        console.log("it dosent exist")
+    }
+
 })
 submit = document.getElementById("submit");
 

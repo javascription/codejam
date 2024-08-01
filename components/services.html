@@ -17,14 +17,14 @@
                 <div class="navbar">
                     <div class="logo"><a href="/">AI++</a></div>
                     <ul class="paths">
-						<li><a href="/#homepage">About</a></li>
+						<li><a href="../index.html">About</a></li>
                     <li><a href="./services.html">Services</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                     </ul>
                     <i class="fa fa-bars" aria-hidden="true" id="bars" onclick="openWrapper()"></i>
                     <ion-icon name="close" class="icon-close" onclick="closeWrapper()"></ion-icon>
                     <div class="moon">
-                        <li><a href="./login.html">Login</a></li>
+                        <li><a href="./login.html" id="nav_login">Login</a></li>
                     </div>
                 </div>
             </header>
@@ -32,7 +32,7 @@
             <!--   ---     ---  WRAPPER CONTENT   ---     ---  -->
             <div class="wrapper">
                 <ul class="wrapper-a">
-                    <li><a href="#homepage">About</a></li>
+                    <li><a href="../index.html">About</a></li>
                     <li><a href="./services.html">Services</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                     <li><a href="./login.html">Login</a></li>
@@ -50,28 +50,6 @@
                         <div class="carousel-inner w-120 h-100">
                           <div class="carousel-item active h-100 w-100 " style="position: relative;">
                             <img src="Images/Reinforcment_models.png" class="d-block w-100 h-100" style="object-fit:cover;border-radius:12px;opacity: 0.3;" alt="...">
-                            <div class="overlay-text">
-                                <h1 class="service_title">
-                                    LLM
-                                </h1>
-                                <p class="view_more text-muted">
-                                    Click to learn more
-                                </p>
-
-                            </div>
-                          </div>
-                          <div class="carousel-item h-100">
-                          
-                          </div>
-                        </div>
-                       
-                      </div>
-                </div>
-                <div class="col bg-elements rounded-5 p-0" style="height: 65vh;border-radius: 12px;">
-                    <div id="carousel2Service" class="carousel slide w-100 h-100" data-bs-interval="false">
-                        <div class="carousel-inner w-120 h-100">
-                          <div class="carousel-item active h-100 w-100 " style="position: relative;">
-                            <img src="LLM.png" class="d-block w-100 h-100" style="object-fit:cover;border-radius:12px;opacity: 0.3;" alt="...">
                             <div class="overlay-text">
                                 <h1 class="service_title">
                                     Deep Learning
@@ -93,10 +71,32 @@
                     <div id="carousel2Service" class="carousel slide w-100 h-100" data-bs-interval="false">
                         <div class="carousel-inner w-120 h-100">
                           <div class="carousel-item active h-100 w-100 " style="position: relative;">
+                            <img src="./Images/Image.png" class="d-block w-100 h-100" style="object-fit:cover;border-radius:12px;opacity: 0.3;" alt="...">
+                            <div class="overlay-text">
+                                <h1 class="service_title">
+                                   Image recognition
+                                </h1>
+                                <p class="view_more text-muted">
+                                    Click to learn more
+                                </p>
+
+                            </div>
+                          </div>
+                          <div class="carousel-item h-100">
+                          
+                          </div>
+                        </div>
+                       
+                      </div>
+                </div>
+                <div class="col bg-elements rounded-5 p-0" style="height: 65vh;border-radius: 12px;">
+                    <div id="carousel2Service" class="carousel slide w-100 h-100" data-bs-interval="false">
+                        <div class="carousel-inner w-120 h-100">
+                          <div class="carousel-item active h-100 w-100 " style="position: relative;">
                             <img src="LLM.png" class="d-block w-100 h-100" style="object-fit:cover;border-radius:12px;opacity: 0.3;" alt="...">
                             <div class="overlay-text">
                                 <h1 class="service_title ">
-                                    LLM
+                                    Analysis
                                 </h1>
                                 <p class="view_more text-muted">
                                     Click to learn more
@@ -207,6 +207,7 @@
                 });
             });
         </script>
+        <script src="navbar_login.js"></script>
     
     </body> 
 </html>
