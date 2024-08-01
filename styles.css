@@ -370,15 +370,6 @@ form span {
   font-size: 4rem;
 }
 
-@media (max-width: 1110px) {
-  .hTitle {
-    font-size: 3.4rem;
-  }
-  .hTitle-p {
-    font-size: 2.4rem;
-  }
-}
-
 #abt,
 .hTest {
   font-size: 3.7rem;
@@ -455,4 +446,106 @@ form span {
   
   font-size:(0.6rem+0.2vw); 
   color: var(--primary-color);
+}
+
+
+@media (max-width: 1110px) {
+  .hTitle {
+    font-size: 3.2rem;
+  }
+  .hTitle-p {
+    font-size: 2.4rem;
+  }
+
+}
+
+@media (max-width: 990px) {
+  .hTitle {
+    font-size: 2.56rem;
+  }
+  .hTitle-p {
+    font-size: 1.92rem;
+  }
+}
+
+@media (max-width: 765px) {
+  .hTitle {
+    font-size: 2.048rem;
+  }
+  .hTitle-p {
+    font-size: 1.536rem;
+  }
+  #abt,
+  .hTest {
+    font-size: 3.5rem;
+    left: 2.6rem;
+    width: 40%;
+  }
+}
+
+@media (max-width: 615px) {
+  .hTitle {
+    font-size: 1.6384rem;
+  }
+  .hTitle-p {
+    font-size: 1.2288rem;
+  }
+  #abt,
+  .hTest {
+    font-size: 3.3rem;
+    left: 2.4rem;
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .hTitle {
+    font-size: 1.31072rem;
+  }
+  .hTitle-p {
+    font-size: 0.98304rem;
+  }
+  
+  .navbar .logo a {
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+
+  .wrapper-a a {
+    font-size: 1.7rem;
+  }
+
+}
+
+@media (max-width: 410px) {
+  .hTitle {
+    font-size: 1.048576rem;
+  }
+  .hTitle-p {
+    font-size: 0.786432rem;
+  }
+
+  #abt,
+  .hTest {
+    font-size: 3rem;
+    left: 2rem;
+    width: 70%;
+  }
+  
+  .hPara {
+    font-size: 1rem;
+  }
+
+  #hContainer p {
+    width: 90%;
+  }
+
+  
+  .hServices-b,
+  .hContact-b {
+    font-size: 1rem;
+    margin-right: 20px;
+  }
+
+
 }
