@@ -1,110 +1,96 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Login</title>
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="login.css">
-</head>
-
-<body>
-    <section>
-        <!--   ---     ---  HEADER CONTENT   ---     ---  -->
-        <header>
-            <div class="navbar">
-                <div class="logo"><a href="#">AI++</a></div>
-                <ul class="paths">
-                    <li><a href="#homepage">About</a></li>
-                <li><a href="./services.html">Services</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./login.html">Login</a></li>
-                </ul>
-                <i class="fa fa-bars" aria-hidden="true" id="bars" onclick="openWrapper()"></i>
-                <ion-icon name="close" class="icon-close" onclick="closeWrapper()"></ion-icon>
-                <div class="moon">
-                    <i class="fa-solid fa-moon"></i>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>AI++ LLC</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="./login.css">
+    </head>
+    <body style="height: 100%;">
+        <section>
+            <!--   ---     ---  HEADER CONTENT   ---     ---  -->
+            <header>
+                <div class="navbar">
+                    <div class="logo"><a href="/">AI++</a></div>
+                    <ul class="paths">
+						<li><a href="#homepage">About</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                    </ul>
+                    <i class="fa fa-bars" aria-hidden="true" id="bars" onclick="openWrapper()"></i>
+                    <ion-icon name="close" class="icon-close" onclick="closeWrapper()"></ion-icon>
+                    <div class="moon">
+                        <i class="fa-solid fa-moon"></i>
+                    </div>
                 </div>
-            </div>
-        </header>
-        <!--   ---     ---  END OF HEADER   ---     ---  -->
-        <!--   ---     ---  WRAPPER CONTENT   ---     ---  -->
-        <div class="wrapper">
-            <ul class="wrapper-a">
-                <li><a>
+            </header>
+            <!--   ---     ---  END OF HEADER   ---     ---  -->
+            <!--   ---     ---  WRAPPER CONTENT   ---     ---  -->
+            <div class="wrapper">
+                <ul class="wrapper-a">
+                    <li><a>
                         <div id="rmoon">
                             <i class="fa-solid fa-moon" id="rmoon"></i>
                         </div>
                     </a></li>
-                <li><a href="#homepage">About</a></li>
-                <li><a href="./services.html">Services</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./login.html">Login</a></li>
-            </ul>
-        </div>
-        <!--   ---     ---  END OF WRAPPER   ---     ---  -->
-    </section>
+					<li><a href="#homepage">About</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                </ul>
+            </div>
+            <!--   ---     ---  END OF WRAPPER   ---     ---  -->
+        </section>
 
-    <div class="container bg-black mt-5">
-        <div class="row bg-black d-flex justify-content-center">
-            <div class=" bg-black">
-                <div class="card bg-black">
-                    <form onsubmit="event.preventDefault()" class="box p-4 pt-5 pb-5">
-                        <h1>Signup</h1>
-                        <p class="text-muted" > Please enter the username and password</p> 
-                        <p class="font-weight-bold text-danger" id="errors"> </p> 
-                        <input type="text" name=""placeholder="Username" id="username">
-                        <input type="text" name=""placeholder="Email" id="email">
-                        <input type="password" name="" placeholder="Password" id="password">
-                        <input type="submit" name=""value="Login" href="#" id="submit">
-                      <a href="signup.html">
-                        <p>
-                            Already signed up? Login Instead
-                        </p>
-                      </a>
-                    </form>
+        <div class="container bg-black mt-10">
+            <div class="row bg-black d-flex justify-content-center">
+                <div class=" bg-black">
+                    <div class="card box bg-black" style="background-color: black;">
+                        <form onsubmit="event.preventDefault()" class="box p-4 pt-5 pb-5">
+                            <h1>Signup</h1>
+                            <p class="text-muted" > Please enter the username and password</p> 
+                            <p class="font-weight-bold text-danger" id="errors"> </p> 
+                            <input type="text" name=""placeholder="Username" id="username">
+                            <input type="text" name=""placeholder="Email" id="email">
+                            <input type="password" name="" placeholder="Password" id="password">
+                            <input type="submit" name=""value="Login" href="#" id="submit">
+                         
+                            <p>
+                                <a href="./login.html">Already signed up? Login Instead</a>
+                                
+                            </p>
+                         
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card">
-                    <form onsubmit="event.preventDefault()" class="box">
-                        <h1>Login</h1>
-                        <p class="text-muted"> Please enter your login and password!</p> <input type="text" name=""
-                            placeholder="Username"> <input type="password" name="" placeholder="Password"> <a
-                            class="forgot text-muted" href="#">Forgot password?</a> <input type="submit" name=""
-                            value="Login" href="#">
-                        <div class="col-md-12">
-                            <ul class="social-network social-circle">
-                                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#" class="icoGoogle" title="Google +"><i class="fab fa-google-plus"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <noscript>You will need to enable Javascript to view this page</noscript>
-    <script src="../main.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="signup.js"></script>
-</body>
 
+		<!--   ---     ---  Footer   ---     ---  -->
+		<div class='footer'>
+			<div class='f-title'>AI++ LLc</div>
+			<div class='f-links'>
+                <i class="fa-brands fa-github icon"><a href='https://github.com/javascription' target='blank'></a></i>
+                <i class="fa-solid fa-code icon"><a href='https://github.com/Emptiedfull' target='blank'></a></i>
+			</div>
+		</div>
+		<!--   ---     ---  Footer End  ---     ---  -->
+
+        <!--   ---     ---  ABOUT CONTENT   ---     ---  -->
+        <!--   ---     ---  SCRIPTS   ---     ---  -->
+        <noscript>You will need to enable Javascript to view this page</noscript>
+        <script src="./main.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="signup.js"></script>
+    </body> 
 </html>
+
+

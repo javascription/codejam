@@ -1,34 +1,40 @@
+form{
+    all: unset;
+    margin-top: 100px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: white;
+    padding-bottom: 20px;
+    border-width: 2px;
+    
+    ;
+
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+   
 }
 
 .card{
-    
     margin-bottom:20px;
-
+    border:none;
 }
 
-.bg-black{
-    background-color: black;
-}
+
 
 .box {
    
-  
-    background-color: black;
+    
+    
+    background: #191919;
+    ;
     text-align: center;
     transition: 0.25s;
-    border-style: solid;
-    border-radius: 20px;
-    border-color: white;
-    border-width: 2px;
-    
     
 }
-
-
 
 .box input[type="text"],
 .box input[type="password"] {
@@ -81,3 +87,12 @@ body {
     text-decoration: underline
 }
 
+a {
+    display: block;
+    text-decoration: none; /* Optional: Remove underline */
+}
+
+a p {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}

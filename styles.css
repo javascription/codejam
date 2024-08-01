@@ -251,24 +251,25 @@ a {
 }
 
 .service_title{
-  position: absolute;
-  top:15%;
-  left:20%;
-  font-size: 4em;
+  font-size: 2.5em;
  
-  transform: translate(-50%, -50%);
+
     
     color:aliceblue   
  
 }
 
 .view_more{
-  position: absolute;
-  transform: translate(-50%, -50%);
+ 
   font-size: 1.4em;
   top: 90%;
   left: 32%;
   color: rgba(240,248,255,0.7);
+} 
+.overlay-text{
+  
+  position:absolute;
+  top: 10%;
 }
 
 .col{

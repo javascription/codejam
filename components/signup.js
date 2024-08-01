@@ -14,23 +14,30 @@ Submit.addEventListener("click", function() {
     if(!validateEmail(email)){
         errors.innerHTML = "Invalid email";
         return
+    }else{
+        errors.innerHTML = "";
     }
 
+    if(!validateUsername(username)){
+        errors.innerHTML = "username Taken";
+        return
+    }
 
-    // console.log(username, email, password);
-    // console.log(hash(password));
+    console.log(username, email, password);
+    console.log(hash(password));
 
-    // const userData = {
-    //     username: username,
-    //     email: email,
-    //     password: hash(password)
-    // }
-    // data = localStorage.getItem("userData");
-    // data_json = data ? JSON.parse(data) : [];
-    // data_json.push(userData);
-    // console.log(data_json)
+    const userData = {
+        username: username,
+        email: email,
+        password: hash(password)
+    }
+    data = localStorage.getItem("userData");
+    data_json = data ? JSON.parse(data) : [];
+    data_json.push(userData);
+    console.log(data_json)
 
-    // localStorage.setItem("userData", JSON.stringify(data_json));
+    localStorage.setItem("userData", JSON.stringify(data_json));
+    location.href = "login.html"
 });
 
 
@@ -47,3 +54,13 @@ const validateEmail = (email) => {
     return re.test(email);
 }
 
+const validateUsername = (username) => {
+    data = localStorage.getItem("userData");
+    data_json = data ? JSON.parse(data) : [];
+    for (let i = 0; i < data_json.length; i++) {
+        if(data_json[i].username === username){
+            return false;
+        }
+    }
+    return true;
+}
