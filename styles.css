@@ -460,6 +460,9 @@ form span {
 }
 
 @media (max-width: 990px) {
+  .car-text{
+    font-size: 2rem;
+  }
   .hTitle {
     font-size: 2.56rem;
   }
@@ -469,6 +472,9 @@ form span {
 }
 
 @media (max-width: 765px) {
+  .car-text{
+    font-size: 1.7rem;
+  }
   .hTitle {
     font-size: 2.048rem;
   }
@@ -484,6 +490,9 @@ form span {
 }
 
 @media (max-width: 615px) {
+  .car-text{
+    font-size: 1.8rem;
+  }
   .hTitle {
     font-size: 1.6384rem;
   }
@@ -499,6 +508,9 @@ form span {
 }
 
 @media (max-width: 500px) {
+  .car-text{
+    font-size: 2rem;
+  }
   .hTitle {
     font-size: 1.31072rem;
   }
@@ -522,7 +534,7 @@ form span {
 
 @media (max-width: 410px) {
   .car-text{
-    font-size: 1rem;
+    font-size: 2rem;
   }
   .hTitle {
     font-size: 1.048576rem;
