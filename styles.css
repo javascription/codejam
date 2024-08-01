@@ -444,7 +444,7 @@ form span {
 
 .car-text{
   
-  font-size:(0.6rem+0.2vw); 
+  
   color: var(--primary-color);
 }
 
@@ -514,10 +514,16 @@ form span {
   .wrapper-a a {
     font-size: 1.7rem;
   }
+  .car-text{
+    font-size: 1.5rem;
+  }
 
 }
 
 @media (max-width: 410px) {
+  .car-text{
+    font-size: 1.1rem;
+  }
   .hTitle {
     font-size: 1.048576rem;
   }
