@@ -1,13 +1,10 @@
 form{
     all: unset;
-    margin-top: 100px;
     border-style: solid;
     border-radius: 20px;
     border-color: white;
     padding-bottom: 20px;
     border-width: 2px;
-    
-    ;
 
 }
 
@@ -21,6 +18,11 @@ body {
 .card{
     margin-bottom:20px;
     border:none;
+}
+
+.formFix {
+    position: relative;
+    top: 5rem;
 }
 
 
