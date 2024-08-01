@@ -18,15 +18,14 @@
                 <div class="navbar">
                     <div class="logo"><a href="/">AI++</a></div>
                     <ul class="paths">
-						<li><a href="#homepage">About</a></li>
+						<li><a href="/#homepage">About</a></li>
                     <li><a href="./services.html">Services</a></li>
                     <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="./login.html">Login</a></li>
                     </ul>
                     <i class="fa fa-bars" aria-hidden="true" id="bars" onclick="openWrapper()"></i>
                     <ion-icon name="close" class="icon-close" onclick="closeWrapper()"></ion-icon>
                     <div class="moon">
-                        <i class="fa-solid fa-moon"></i>
+                        <li><a href="./login.html">Login</a></li>
                     </div>
                 </div>
             </header>
@@ -34,11 +33,6 @@
             <!--   ---     ---  WRAPPER CONTENT   ---     ---  -->
             <div class="wrapper">
                 <ul class="wrapper-a">
-                    <li><a>
-                        <div id="rmoon">
-                            <i class="fa-solid fa-moon" id="rmoon"></i>
-                        </div>
-                    </a></li>
 					<li><a href="#homepage">About</a></li>
 					
                     <li><a href="./services.html">Services</a></li>
@@ -56,7 +50,7 @@
                         <form onsubmit="event.preventDefault()" class="box pt-5 pl-4 pr-4 pb-5" id="form">
                             <h1>Login</h1>
                             <p class="text-muted" id="errors"> Please enter your username and password!</p> 
-                            <input type="text" id="username" name=""placeholder="Username" >
+                            <input type="text" id="username" name="" placeholder="Username" >
                             <input type="password" id="password" name="" placeholder="Password">
                             <input type="submit" id="submit" name=""value="Login" href="#">
                           <a href="signup.html">
