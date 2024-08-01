@@ -317,21 +317,6 @@ form span {
   width: 100vw;
   height: 100rem;
   position: absolute;
-  background: repeating-linear-gradient(
-    0deg,
-    transparent,
-    transparent 10px, /* Increase the size of the grid cells */
-    rgba(0, 0, 0, 0.3) 10px, /* Darker color for horizontal lines */
-    rgba(0, 0, 0, 0.3) 20px /* Increase spacing between lines */
-  ),
-  repeating-linear-gradient(
-    90deg,
-    transparent,
-    transparent 10px, /* Increase the size of the grid cells */
-    rgba(0, 0, 0, 0.3) 10px, /* Darker color for vertical lines */
-    rgba(0, 0, 0, 0.3) 20px /* Increase spacing between lines */
-  );
-  background-color: #1e1e1e; /* Dark background color */
   font-family: 'Raleway';
   color: var(--primary-color);
 }
