@@ -16,6 +16,7 @@
 }
 
 :root {
+    color-scheme: dark;
     --primary-color: #e7e9e3;
     --tertiary-color: #000000;
     --pink: rgb(233, 30, 99);
@@ -438,7 +439,7 @@ form span {
 .product-info{
   padding: 5%;
   overflow: auto;
-
+  text-align: center;
 }
 
 .car-text{
